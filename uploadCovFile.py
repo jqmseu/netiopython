@@ -37,7 +37,8 @@ class uploadcovFile:
         data.append('Content-Disposition: form-data; name="platform"\r\n')
         data.append('5')
         data.append('--%s' % self.boundary)
-		data.append('--%s' % self.boundary)
+	data.append('--%s' % self.boundary)
+        #this is the meaning
 
         data.append('Content-Disposition: form-data; name="clitime"\r\n')
         data.append(str(int(time.time())))
